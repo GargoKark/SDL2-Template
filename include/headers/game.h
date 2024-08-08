@@ -1,11 +1,11 @@
 #pragma once
 
-#include <SDL.h>
-#include <SDL_image.h>
+#include "SDL.h"
+#include "SDL_image.h"
 #include <iostream>
 
 class Game{
-public:
+    public:
     Game();
     ~Game();
 
@@ -18,7 +18,7 @@ public:
 
     bool running();
 
-private:
+    private:
     bool isRunning;
     SDL_Window *window;
     SDL_Renderer *renderer;
